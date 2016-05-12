@@ -3,9 +3,9 @@ import sys
 import os
 import random
 
-spec_chars = ['@', '#', '$', '%', '*', '-', "_"]
-file_name = "/usr/share/dict/words"
 total_bytes = 0
+file_name = "/usr/share/dict/words"
+spec_chars = ['@', '#', '$', '%', '*', '-', "_"]
 MIN_WORD_LENGTH = 5
 MAX_WORD_LENGTH = 8
 

@@ -14,11 +14,13 @@ $ ./pwgen.py 5
 ```
 ## Configuration
 
-The script includes three user-configurable options: minimum word length, maximum word length, and special character list. 
-Technically, there are four, if you need to point to a word list somewhere other than `/usr/share/dict/words`.
+The script includes four user-configurable options: minimum word length, maximum word length, word list, and special 
+character list. If the included word list is not comprehensive enough for you, you can change it to 
+`/usr/share/dict/words`, which is the full word list on a Linux system.
 
 ```python
-spec_chars = ['@', '#', '$', '%', '*', '-', "_"]
+FILE_NAME = "wordlist.txt"
+SPEC_CHARS = ['@', '#', '$', '%', '*', '-', "_"]
 MIN_WORD_LENGTH = 5
 MAX_WORD_LENGTH = 8
 ```

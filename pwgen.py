@@ -19,10 +19,14 @@ SPEC_CHARS = ['@', '#', '$', '%', '*', '-', "_"]
 MIN_WORD_LENGTH = 5
 MAX_WORD_LENGTH = 8
 
+FILE_PATH = os.path.dirname(os.path.abspath(__file__))
+FULL_FILE_NAME = os.path.join(FILE_PATH, FILE_NAME)
+
+
 def get_random_line(file_size):
     """Returns a random line from the wordlist."""
     random_point = random.randint(0, file_size)
-    myfile = open(FILE_NAME)
+    myfile = open(FULL_FILE_NAME)
     myfile.seek(random_point)
     myfile.readline()
 
@@ -34,7 +38,7 @@ def get_spec_char():
 
 def main():
     """Primary entry point for the program."""
-    total_bytes = os.stat(FILE_NAME).st_size
+    total_bytes = os.stat(FULL_FILE_NAME).st_size
     num = 1
 
     if len(sys.argv) > 1:

@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 """
-    pwgen.py
-    ~~~~~~~~
+    nupass.py
+    ~~~~~~~~~
 
     Generates a user-readible password from
     a wordlist.

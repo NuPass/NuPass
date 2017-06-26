@@ -1,0 +1,27 @@
+#!/usr/bin/env python
+"""
+    nupass
+    ~~~~~~
+
+    A command-line script for creating user-readible passwords.
+
+    :copyright: (c) 2017 by Sean Callaway.
+    :license: GNU GPL v2, see LICENSE for more details.
+"""
+import sys
+import nupass
+
+def main():
+    """Primary entry point for the program."""
+    num = 1
+
+    if len(sys.argv) > 1:
+        # TODO: error out if not a number
+        num = int(sys.argv[1])
+
+    for i in range(0, num):
+        print nupass.gen_pass()
+
+
+if __name__ == "__main__":
+    main()

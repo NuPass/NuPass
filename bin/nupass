@@ -20,7 +20,7 @@ def main():
         num = int(sys.argv[1])
 
     for i in range(0, num):
-        print gen_pass()
+        print nupass.gen_pass()
 
 
 if __name__ == "__main__":

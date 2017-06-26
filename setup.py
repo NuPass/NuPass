@@ -14,4 +14,5 @@ setup(name='nupass',
 	  license='GPLv2',
 	  packages=['nupass'],
 	  scripts=['bin/nupass'],
+          include_package_data=True,
 	  zip_safe=False)

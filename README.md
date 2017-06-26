@@ -1,29 +1,82 @@
 # NuPass 
-Readable, typable password generator script. Because your users can't deal with [pwmake](http://linux.die.net/man/1/pwmake).
+> Readable, typable password generator script. Because your users can't deal with [pwmake](http://linux.die.net/man/1/pwmake).
 
-## Usage
+[![PyPI Version][pypi-image]][pypi-url]
+[![Build Status][travis-image]][travis-url]
+[![Downloads Stats][pypi-downloads]][pypi-url]
+[![Release Status][release-status]][pypi-url]
+
+NuPass provides the `nupass` package and a command-line script for generating temporary 
+passwords that your users can read and type. Passwords are provided by the `gen_pass()` 
+function and are in the following format:
+
+<number><Capitalized_word><special_character><Capitalized_word><number>
+
+For example, `4Toffee@Buttercream7`.
+
+![](header.png)
+
+## Installation
+
+OS X & Linux:
+
+```sh
+pip install nupass
+```
+
+Windows:
+
+```sh
+python -m pip install nupass
+```
+
+## Usage example
 
 Generate a single password:
 ```bash
-$ ./nupass.py
+$ nupass
 ```
 
 Generate five passwords:
 ```bash
-$ ./nupass.py 5
+$ nupass 5
 ```
-## Configuration
 
-The script includes four user-configurable options: minimum word length, maximum word length, word list, and special 
-character list. If the included word list is not comprehensive enough for you, you can change it to 
-`/usr/share/dict/words`, which is the full word list on a Linux system.
+## Development setup
 
+Using NuPass in your projects:
 ```python
-FILE_NAME = "wordlist.txt"
-SPEC_CHARS = ['@', '#', '$', '%', '*', '-', "_"]
-MIN_WORD_LENGTH = 5
-MAX_WORD_LENGTH = 8
+import nupass
+temp_pass = nupass.gen_pass() # returns a string containing your password
 ```
 
-More (or fewer) special characters can be added to the list and the values of `MAX_WORD_LENGTH` and `MIN_WORD_LENGTH` can be 
-adjusted to values to suit your needs.
+## Release History
+
+* 0.2.0
+    * CHANGE: Converted to package
+    * ADD: Script added to path when installed via `setup.py`
+* 0.1.0
+    * The first proper release
+
+## Meta
+
+Sean Callaway – [@smcallaway](https://twitter.com/smcallaway) – seancallaway@gmail.com
+
+Distributed under the GNU GPL v2 license. See ``LICENSE`` for more information.
+
+[https://github.com/NuPass/NuPass](https://github.com/nupass/nupass)
+
+## Contributing
+
+1. Fork it (<https://github.com/NuPass/NuPass/fork>)
+2. Create your feature branch (`git checkout -b feature/fooBar`)
+3. Commit your changes (`git commit -am 'Add some fooBar'`)
+4. Push to the branch (`git push origin feature/fooBar`)
+5. Create a new Pull Request
+
+<!-- Markdown link & img dfn's -->
+[pypi-image]: https://img.shields.io/pypi/v/nupass.svg
+[pypi-url]: https://pypi.python.org/pypi/nupass
+[pypi-downloads]: https://img.shields.io/pypi/dm/nupass.svg
+[release-status]: https://img.shields.io/pypi/status/nupass.svg
+[wiki]: https://github.com/NuPass/NuPass/wiki

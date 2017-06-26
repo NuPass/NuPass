@@ -13,4 +13,5 @@ setup(name='nupass',
 	  author_email='seancallaway@gmail.com',
 	  license='GPLv2',
 	  packages=['nupass'],
+	  scripts=['bin/nupass'],
 	  zip_safe=False)

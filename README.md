@@ -77,6 +77,8 @@ Distributed under the GNU GPL v2 license. See ``LICENSE`` for more information.
 <!-- Markdown link & img dfn's -->
 [pypi-image]: https://img.shields.io/pypi/v/nupass.svg
 [pypi-url]: https://pypi.python.org/pypi/nupass
+[travis-image]: https://api.travis-ci.org/NuPass/NuPass.svg?branch=master
+[travis-url]: https://travis-ci.org/NuPass/NuPass
 [pypi-downloads]: https://img.shields.io/pypi/dm/nupass.svg
 [release-status]: https://img.shields.io/pypi/status/nupass.svg
 [wiki]: https://github.com/NuPass/NuPass/wiki

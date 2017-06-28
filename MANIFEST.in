@@ -1,1 +1,3 @@
+exclude .travis.yml
+exclude .gitignore
 include nupass/wordlist.txt

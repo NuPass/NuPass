@@ -28,9 +28,10 @@ def get_random_line(file_size):
     random_point = random.randint(0, file_size)
     myfile = open(FULL_FILE_NAME)
     myfile.seek(random_point)
-    myfile.readline()
+    line = myfile.readline()
+    myfile.close()
 
-    return myfile.readline()
+    return line
 
 def get_spec_char():
     """Returns a random special character."""

@@ -10,11 +10,12 @@
 from setuptools import setup
 
 setup(name='nupass',
-      version='0.2',
+      version='0.2.1',
       description='Generate readable, typable passwords',
       classifiers=[
           'Development Status :: 4 - Beta',
           'Programming Language :: Python :: 2.7',
+          'Programming Language :: Python :: 3.5',
           'License :: OSI Approved :: GNU General Public License v2 (GPLv2)'],
       url='https://github.com/nupass/nupass',
       author='Sean Callaway',

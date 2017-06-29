@@ -26,7 +26,7 @@ def get_random_line(file_size):
     random_point = random.randint(0, file_size)
     myfile = open(FULL_FILE_NAME)
     myfile.seek(random_point)
-    myfile.readline()
+    myfile.readline() # required to clear the partial line
     line = myfile.readline()
     myfile.close()
 

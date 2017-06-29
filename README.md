@@ -10,11 +10,9 @@ NuPass provides the `nupass` package and a command-line script for generating te
 passwords that your users can read and type. Passwords are provided by the `gen_pass()` 
 function and are in the following format:
 
-<number><Capitalized_word><special_character><Capitalized_word><number>
+{number}{Capitalized_word}{special_character}{Capitalized_word}{number}
 
 For example, `4Toffee@Buttercream7`.
-
-![](header.png)
 
 ## Installation
 

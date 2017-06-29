@@ -48,6 +48,13 @@ import nupass
 temp_pass = nupass.gen_pass() # returns a string containing your password
 ```
 
+If you want to change the length of the words used in the password, you can set the parameters of `gen_pass()`.
+```python
+import nupass
+temp_pass = nupass.gen_pass(min_w_len=4, max_w_len=10)
+# functionally the same as nupass.genpass(4, 10)
+```
+
 ## Release History
 
 * 0.2.0

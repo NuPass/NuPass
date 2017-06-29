@@ -1,5 +1,7 @@
 language: python
 python:
   - "2.7"
+  - "3.5"
 script: 
   - python -m unittest tests.test_gen_pass
+  - python3 -m unittest tests.test_gen_pass

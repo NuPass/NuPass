@@ -56,7 +56,10 @@ temp_pass = nupass.gen_pass(min_w_len=4, max_w_len=10)
 ```
 
 ## Release History
-
+* 0.2.1
+    * ADD: Word length now set by function parameters.
+    * CHANGE: Fixed an issue where the wordlist wasn't being closed.
+    * CHANGE: Fixed an issue with invalid command-line arguments.
 * 0.2.0
     * CHANGE: Converted to package
     * ADD: Script added to path when installed via `setup.py`

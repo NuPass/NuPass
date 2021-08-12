@@ -4,7 +4,7 @@
 
     Package setup file for nupass.
 
-    :copyright: (c) 2017 by Sean Callaway.
+    :copyright: (c) 2021 by Sean Callaway.
     :license: GNU GPL v2, see LICENSE for more details.
 """
 from setuptools import setup
@@ -26,6 +26,10 @@ setup(name='nupass',
       author_email='seancallaway@gmail.com',
       license='GPLv2',
       packages=['nupass'],
-      scripts=['bin/nupass'],
+      entry_points={
+          'console_scripts': [
+              'nupass = nupass.script:main',
+          ],
+      },
       include_package_data=True,
       zip_safe=False)

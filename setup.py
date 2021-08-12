@@ -10,10 +10,10 @@
 from setuptools import setup
 
 setup(name='nupass',
-      version='0.2.1',
+      version='1.0.0',
       description='Generate readable, typable passwords',
       classifiers=[
-          'Development Status :: 4 - Beta',
+          'Development Status :: 5 - Production/Stable',
           'Programming Language :: Python :: 2.7',
           'Programming Language :: Python :: 3.5',
           'Programming Language :: Python :: 3.6',

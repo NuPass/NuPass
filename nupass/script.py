@@ -5,7 +5,7 @@
 
     A command-line script for creating user-readible passwords.
 
-    :copyright: (c) 2017 by Sean Callaway.
+    :copyright: (c) 2021 by Sean Callaway.
     :license: GNU GPL v2, see LICENSE for more details.
 """
 import sys
